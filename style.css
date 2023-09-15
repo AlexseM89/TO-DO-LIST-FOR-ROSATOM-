@@ -1,0 +1,58 @@
+input[type="button"] {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(213, 228, 245);
+}
+input[type="text"] {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(248, 249, 250);
+}
+p {
+  text-align: center;
+}
+.list {
+  width: 80%;
+  align-items: left;
+  background-color: #f0efef;
+  margin: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+  font-size: 35px;
+}
+.list:nth-child(2n){
+  background-color: #f4d5d5;
+}
+.list:hover{
+  background: #7985ba;
+}
+.addBtn {
+  padding: 10px;
+  width: 47%;
+  margin: 10px;
+  background: #cbe1f1;
+  color: #555;
+  float: auto;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.addBtn:hover{
+  background: #6e85ed;
+}
+.inputText {
+  padding: 10px;
+  width: 45%;
+  margin: 10px;
+  background: #ffffff;
+  color: #555;
+  float: auto;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
