@@ -21,10 +21,10 @@ p {
   text-align: left;
   font-size: 35px;
 }
-.list:nth-child(2n){
+.list:nth-child(2n) {
   background-color: #f4d5d5;
 }
-.list:hover{
+.list:hover {
   background: #7985ba;
 }
 .addBtn {
@@ -40,7 +40,7 @@ p {
   transition: 0.3s;
   border-radius: 5px;
 }
-.addBtn:hover{
+.addBtn:hover {
   background: #6e85ed;
 }
 .inputText {
