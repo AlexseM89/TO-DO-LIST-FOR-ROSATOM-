@@ -1,4 +1,4 @@
-# TO-DO-LIST-FOR-ROSATOM-
+# TO-DO-LIST-FOR-ROSATOM
 
 ## Реализация TodoList
 

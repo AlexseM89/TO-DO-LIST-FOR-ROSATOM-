@@ -6,6 +6,17 @@ input[type="button"] {
 input[type="text"] {
   display: block;
   margin: 0 auto;
+
+  background-color: rgb(248, 249, 250);
+}
+input[type="date"] {
+  display: block;
+  height: 38px;
+  width: 600px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 15px;
   background-color: rgb(248, 249, 250);
 }
 p {
@@ -55,4 +66,24 @@ p {
   cursor: pointer;
   transition: 0.3s;
   border-radius: 5px;
+}
+.buttonClose {
+  float: right;
+  margin: 10px;
+}
+.buttonClose:hover {
+  background-color: #555;
+}
+.buttonClose:active {
+  background-color: #ffffff;
+}
+.buttonComplete {
+  float: right;
+  margin: 10px;
+}
+.buttonComplete:hover {
+  background-color: #555;
+}
+.buttonComplete:active {
+  background-color: #ffffff;
 }
