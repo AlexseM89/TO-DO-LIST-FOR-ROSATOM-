@@ -7,18 +7,23 @@
     <title>To do List</title>
 </head>
 <br>
-   <p>Мой To Do List</p> 
+   <p style="font-size: 35px;">To Do List</p> 
 </br>
 <input type="text" id="box" class="inputText" placeholder="Введи текст задачи" />
-
 <input type="date" id="boxDate" class="inputDate"  value="гггг-мм-чч"/>
 </br>
+<fieldset>
+<legend>Кнопки управления</legend>
 <input type="button" class="addBtn" value="Добавить задачу" onclick="addItem();"/>
-</br>
+
 <input type="button" class="addBtn" value="Чет" onclick="addItem();"/>
-</br>
+
 <input type="button" class="addBtn" value="Нечет" onclick="addItem();"/>
-</br>
+
+<input type="button" class="addBtn" value="Del first" onclick="delFirstItem();"/>
+
+<input type="button" class="addBtn" value="Del last" onclick="delLastItem();"/>
+</fieldset>
 <div id="list">
 
 </div>

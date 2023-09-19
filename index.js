@@ -1,8 +1,6 @@
 //Функция добавляет новую задачу в список
 function addItem() {
   let newItem = document.createElement("div");
-  let newItemTwo = document.createElement("div");
-
   newItem.innerHTML =
     document.getElementById("box").value +
     " " +
@@ -59,4 +57,16 @@ function loadList() {
 // если список дел есть в localeStorage загружаем его на страницу
 if (localStorage.storedList) {
   loadList();
+}
+//удалим первую запись в todo list
+function delFirstItem() {
+  document.querySelectorAll(".list")[0].remove();
+  saveList();
+}
+//удалим последнюю запись в todo list
+function delLastItem() {
+  document
+    .querySelectorAll(".list")
+    [document.querySelectorAll(".list").length - 1].remove();
+  saveList();
 }

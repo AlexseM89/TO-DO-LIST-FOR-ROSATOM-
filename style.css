@@ -1,12 +1,28 @@
-input[type="button"] {
-  display: block;
-  margin: 0 auto;
-  background-color: rgb(213, 228, 245);
+fieldset {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
+legend {
+  display: block;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
+}
+input[type="button"] {
+  appearance: auto;
+  user-select: none;
+  text-wrap: nowrap;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  box-sizing: border-box;
+  padding-block: 1px;
+  padding-inline: 6px;
+}
+
 input[type="text"] {
   display: block;
   margin: 0 auto;
-
   background-color: rgb(248, 249, 250);
 }
 input[type="date"] {
@@ -39,12 +55,14 @@ p {
   background: #7985ba;
 }
 .addBtn {
+  position: relative;
   padding: 10px;
-  width: 47%;
+  width: 140px;
+  height: 30px;
   margin: 10px;
   background: #cbe1f1;
   color: #555;
-  float: auto;
+  float: none;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
