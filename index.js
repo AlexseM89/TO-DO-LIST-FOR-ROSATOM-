@@ -70,6 +70,11 @@ function delLastItem() {
     [document.querySelectorAll(".list").length - 1].remove();
   saveList();
 }
+//удалим первую запись в todo list
+function delFirstItem() {
+  document.querySelectorAll(".list")[0].remove();
+  saveList();
+}
 // подсвечиваем каждый второй элемент
 /*
 function highlight2n() {
@@ -97,6 +102,21 @@ function highlight2n() {
         arr[i].classList.add("even");
       } else {
         arr[i].classList.remove("even");
+      }
+    }
+  }
+}
+//подсветка каждого нечетного элемента
+
+function highlightOdd() {
+  let arr = document.querySelectorAll(".list");
+  for (let j = 0; j < arr.length; j++) {
+    arr[j].classList.remove("odd");
+    for (let i = 0; i < arr.length; i++) {
+      if ((i + 1) % 2 != 0) {
+        arr[i].classList.add("odd");
+      } else {
+        arr[i].classList.remove("odd");
       }
     }
   }

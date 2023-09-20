@@ -52,8 +52,11 @@ p {
 .list:hover {
   background: #7985ba;
 }
-.tttt {
-  background-color: chartreuse;
+.even {
+  background-color: rgb(240, 89, 190);
+}
+.odd {
+  background-color: #0fa;
 }
 .addBtn {
   position: relative;
