@@ -2,11 +2,16 @@ fieldset {
   display: inline-block;
   text-align: center;
   width: 100%;
+  margin: 0 auto;
+  border: 0;
 }
 legend {
   display: block;
   padding-inline-start: 2px;
   padding-inline-end: 2px;
+}
+body {
+  background-color: #ffeedd38;
 }
 input[type="button"] {
   appearance: auto;
@@ -24,11 +29,12 @@ input[type="text"] {
   display: block;
   margin: 0 auto;
   background-color: rgb(248, 249, 250);
+  width: 600px;
 }
 input[type="date"] {
   display: block;
   height: 38px;
-  width: 600px;
+  width: 620px;
   text-align: center;
   border-radius: 5px;
   margin: 0 auto;
@@ -37,6 +43,23 @@ input[type="date"] {
 }
 p {
   text-align: center;
+}
+.title {
+  display: block;
+  margin: 0 auto;
+  background-color: #010a01;
+  color: white;
+  text-align: center;
+  width: 620px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.neon-text {
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0ff,
+    0 0 82px #0ff, 0 0 92px #0ff, 0 0 102px #0ff, 0 0 151px #0ff;
 }
 .list {
   width: 80%;
@@ -48,15 +71,14 @@ p {
   text-align: left;
   font-size: 35px;
 }
-
 .list:hover {
-  background: #7985ba;
+  background: #fbe4ff;
 }
 .even {
-  background-color: rgb(240, 89, 190);
+  background-color: #f6a6ff;
 }
 .odd {
-  background-color: #0fa;
+  background-color: #d5aaff;
 }
 .addBtn {
   position: relative;
@@ -64,7 +86,7 @@ p {
   width: 140px;
   height: 30px;
   margin: 10px;
-  background: #cbe1f1;
+  background: #ffeeddec;
   color: #555;
   float: none;
   text-align: center;
@@ -74,7 +96,7 @@ p {
   border-radius: 5px;
 }
 .addBtn:hover {
-  background: #6e85ed;
+  background: #edf9e1;
 }
 .inputText {
   padding: 10px;

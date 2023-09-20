@@ -25,7 +25,6 @@ function addItem() {
     buttonComplete.parentElement.remove();
     saveList();
   };
-
   //добавим функцию кнопке пометить задачу решенной и в конец списка
   buttonComplete.onclick = function () {
     //пометим дело завершенным и переместим в конец списка
@@ -42,7 +41,6 @@ function addItem() {
   buttonClose.innerText = "Х";
   saveList();
 }
-
 //функция сохраняет список задач в localStorage
 function saveList() {
   localStorage.storedList = document.getElementById("list").innerHTML;
@@ -75,28 +73,12 @@ function delFirstItem() {
   document.querySelectorAll(".list")[0].remove();
   saveList();
 }
-// подсвечиваем каждый второй элемент
-/*
-function highlight2n() {
-  let arr = document.querySelectorAll(".list");
-  arr[i].style.background = "#7985ba";
-
-  for (let i = 0; i < arr.length; i++) {
-    if ((i + 1) % 2 == 0) {
-      if (arr[i].style.backgroundColor === "#7985ba") {
-        arr[i].style.background = "#fff";
-      } else {
-        arr[i].style.background = "#7985ba";
-      }
-    }
-  }
-}
-*/
-//подкрашиваем каждый четный элемент
+// подсвечиваем каждый четный элемент
 function highlight2n() {
   let arr = document.querySelectorAll(".list");
   for (let j = 0; j < arr.length; j++) {
     arr[j].classList.remove("even");
+    arr[j].classList.remove("odd");
     for (let i = 0; i < arr.length; i++) {
       if ((i + 1) % 2 == 0) {
         arr[i].classList.add("even");
@@ -107,11 +89,11 @@ function highlight2n() {
   }
 }
 //подсветка каждого нечетного элемента
-
 function highlightOdd() {
   let arr = document.querySelectorAll(".list");
   for (let j = 0; j < arr.length; j++) {
     arr[j].classList.remove("odd");
+    arr[j].classList.remove("even");
     for (let i = 0; i < arr.length; i++) {
       if ((i + 1) % 2 != 0) {
         arr[i].classList.add("odd");

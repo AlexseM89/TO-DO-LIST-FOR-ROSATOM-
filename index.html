@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <title>To do List</title>
 </head>
+<body>
 <br>
-   <p style="font-size: 35px;">To Do List</p> 
+<div class="title">
+    <p class="neon-text" style="font-size: 35px;">To Do List</p>
+</div>  
 </br>
 <input type="text" id="box" class="inputText" placeholder="Введи текст задачи" />
 <input type="date" id="boxDate" class="inputDate"  value="гггг-мм-чч"/>
@@ -16,9 +19,9 @@
 <legend>Кнопки управления</legend>
 <input type="button" class="addBtn" value="Добавить задачу" onclick="addItem();"/>
 
-<input type="button" class="addBtn" value="Чет" onclick="highlight2n();"/>
+<input type="button" class="addBtn" value="Четные" onclick="highlight2n();"/>
 
-<input type="button" class="addBtn" value="Нечет" onclick="highlightOdd();"/>
+<input type="button" class="addBtn" value="Нечетные" onclick="highlightOdd();"/>
 
 <input type="button" class="addBtn" value="Del first" onclick="delFirstItem();"/>
 
