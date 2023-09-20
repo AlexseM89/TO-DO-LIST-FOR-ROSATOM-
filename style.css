@@ -48,11 +48,12 @@ p {
   text-align: left;
   font-size: 35px;
 }
-.list:nth-child(2n) {
-  background-color: #f4d5d5;
-}
+
 .list:hover {
   background: #7985ba;
+}
+.tttt {
+  background-color: chartreuse;
 }
 .addBtn {
   position: relative;

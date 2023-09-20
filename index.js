@@ -70,3 +70,34 @@ function delLastItem() {
     [document.querySelectorAll(".list").length - 1].remove();
   saveList();
 }
+// подсвечиваем каждый второй элемент
+/*
+function highlight2n() {
+  let arr = document.querySelectorAll(".list");
+  arr[i].style.background = "#7985ba";
+
+  for (let i = 0; i < arr.length; i++) {
+    if ((i + 1) % 2 == 0) {
+      if (arr[i].style.backgroundColor === "#7985ba") {
+        arr[i].style.background = "#fff";
+      } else {
+        arr[i].style.background = "#7985ba";
+      }
+    }
+  }
+}
+*/
+//подкрашиваем каждый четный элемент
+function highlight2n() {
+  let arr = document.querySelectorAll(".list");
+  for (let j = 0; j < arr.length; j++) {
+    arr[j].classList.remove("even");
+    for (let i = 0; i < arr.length; i++) {
+      if ((i + 1) % 2 == 0) {
+        arr[i].classList.add("even");
+      } else {
+        arr[i].classList.remove("even");
+      }
+    }
+  }
+}
